@@ -1,0 +1,65 @@
+object WebModule1: TWebModule1
+  OldCreateOrder = False
+  Actions = <
+    item
+      Name = 'WebActionItem1'
+      OnAction = WebModule1WebActionItem1Action
+    end>
+  Left = 192
+  Top = 125
+  Height = 150
+  Width = 215
+  object Table1: TTable
+    Active = True
+    DatabaseName = 'Parks'
+    TableName = 'Parks'
+    Left = 80
+    Top = 16
+  end
+  object DataSetTableProducer1: TDataSetTableProducer
+    Columns = <
+      item
+        Align = haCenter
+        BgColor = 'White'
+        FieldName = 'OBJECTID'
+        Title.BgColor = 'Teal'
+        Title.Caption = 'ID '#1087#1072#1088#1082#1072
+      end
+      item
+        Align = haLeft
+        BgColor = 'White'
+        FieldName = 'NAME'
+        Title.BgColor = 'Teal'
+        Title.Caption = #1053#1072#1079#1074#1072#1085#1080#1077
+      end
+      item
+        Align = haLeft
+        BgColor = 'White'
+        FieldName = 'LOCATION'
+        Title.BgColor = 'Teal'
+        Title.Caption = #1052#1077#1089#1090#1086#1087#1086#1083#1086#1078#1077#1085#1080#1077
+      end
+      item
+        Align = haRight
+        BgColor = 'White'
+        FieldName = 'SHAPE_AREA'
+        Title.BgColor = 'Teal'
+        Title.Caption = #1055#1083#1086#1097#1072#1076#1100
+      end
+      item
+        Align = haRight
+        BgColor = 'White'
+        FieldName = 'SHAPE_LEN'
+        Title.BgColor = 'Teal'
+        Title.Caption = #1055#1077#1088#1080#1084#1077#1090#1088
+      end>
+    DataSet = Table1
+    TableAttributes.Align = haCenter
+    TableAttributes.Border = 5
+    TableAttributes.CellSpacing = 5
+    TableAttributes.CellPadding = 5
+    TableAttributes.Width = 75
+    Left = 80
+    Top = 64
+  end
+end
